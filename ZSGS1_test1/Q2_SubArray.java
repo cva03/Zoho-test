@@ -53,6 +53,22 @@ public class Q2_SubArray {
                 arr2[index2++]=arrCopy[i];
             }
         }
+         int sum0=0;
+        for(int i=0;i<arr1.length;i++){
+            sum0+=arr1[i];
+        }
+        if(sum0!=sum){
+            System.out.println("Arrays cant be split");
+            return;
+        }
+        sum0=0;
+        for(int i=0;i<arr2.length;i++){
+            sum0+=arr2[i];
+        }
+        if(sum0!=sum){
+            System.out.println("Arrays cant be split");
+            return;
+        }
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
     }
